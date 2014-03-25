@@ -1,0 +1,28 @@
+{
+  "name": "learn",
+  "version": "0.0.0",
+  "authors": [
+    "ababup1192 <ababup1192@gmail.com>"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.9",
+    "bootstrap": "~3.1.1"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+        "js": "dist/js/bootstrap.min.js",
+        "css": "dist/css/bootstrap.min.css"
+    },
+    "jquery": {
+      "js": "jquery.min.js"
+    }
+  }
+}

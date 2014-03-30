@@ -24,11 +24,15 @@ module.exports = (grunt)->
 		# html template engine
 		jade:
 			compile:
-				option:
+				options:
 					pretty: true
-				cwd: "jade"
-				files:
-					"**/*.jade"
+				files: [
+					cwd: "jade"
+					src: "**/*.jade",
+					dest: "build",
+					expand: true,
+					ext: ".html"
+				]
 		# js template engine
 		coffee:
 			compile:
